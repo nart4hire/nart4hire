@@ -1,0 +1,36 @@
+{
+  "name": "nart4hire",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.14.0",
+    "pnpm": ">=10.30.3"
+  },
+  "description": "Personal portfolio website powered by the Nuxt framework and SonicJS headless CMS.",
+  "scripts": {
+    "dev": "pnpm -r --parallel --stream dev"
+  },
+  "keywords": [],
+  "author": "Nathanael Santoso <business@nathancs.dev> (https://nathancs.dev)",
+  "license": "MIT",
+  "packageManager": "pnpm@10.30.3",
+  "volta": {
+    "node": "24.14.0",
+    "pnpm": "10.30.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "^7.3.1",
+      "rollup": "^4.59.0"
+    },
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "citty": "^0.2.1",
+        "eslint": "^10.3.0"
+      }
+    }
+  },
+  "dependencies": {
+    "eslint": "^10.3.0"
+  }
+}

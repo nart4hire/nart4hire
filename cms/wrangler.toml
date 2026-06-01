@@ -1,0 +1,32 @@
+name = "portfolio"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare Workers settings
+workers_dev = true
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "nart4hire"
+database_id = "3dfabfea-7f15-4f25-8a62-d26b3b675acf"
+migrations_dir = "./node_modules/@sonicjs-cms/core/migrations"
+
+# R2 Bucket for media storage
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "nart4hire"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+
+# Production environment
+[env.production]
+name = "portfolio"
+vars = { ENVIRONMENT = "production" }
+
+# Observability
+[observability]
+enabled = true

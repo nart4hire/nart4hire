@@ -1,0 +1,56 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  height="100%"
+>
+  <defs>
+    <!-- HEXAGON -->
+    <g id="single-hex">
+      <polygon
+        points="0,-20 17.3205,-10 17.3205,10 0,20 -17.3205,10 -17.3205,-10"
+        transform="scale(0.975)"
+      />
+    </g>
+    <!-- PATTERN GRID -->
+    <pattern
+      id="iso-grid"
+      width="34.641"
+      height="60"
+      patternUnits="userSpaceOnUse"
+      patternTransform="scale(1)"
+    >
+      <g fill="currentColor">
+        <use
+          href="#single-hex"
+          x="0"
+          y="0"
+        />
+        <use
+          href="#single-hex"
+          x="34.641"
+          y="0"
+        />
+        <use
+          href="#single-hex"
+          x="17.3205"
+          y="30"
+        />
+        <use
+          href="#single-hex"
+          x="0"
+          y="60"
+        />
+        <use
+          href="#single-hex"
+          x="34.641"
+          y="60"
+        />
+      </g>
+    </pattern>
+  </defs>
+  <rect
+    width="100%"
+    height="100%"
+    fill="url(#iso-grid)"
+  />
+</svg>
